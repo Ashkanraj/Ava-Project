@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <aside
       className="fixed right-0 top-0 h-screen flex flex-col gap-24 w-[166px] bg-[#00B5A0] rounded-l-[10px]"
-
     >
       {/* Title at the top */}
       <div className="mt-[50px] mx-auto">
@@ -12,12 +12,18 @@ const Sidebar = () => {
       </div>
       {/* Sidebar items */}
       <div className="flex flex-col gap-2 items-center justify-center">
-        <button className="w-[155px] h-[48px] px-6 py-2 rounded-[16px]  text-white text-md font-medium hover:bg-[#02816E] transition">
+      <Link
+        to="/dashboard"
+        className="w-[155px] h-[48px] px-6 py-2 rounded-[16px] text-white text-md font-medium hover:bg-[#02816E] transition flex items-center justify-center"
+        >
          تبدیل گفتار
-        </button>
-        <button className="w-[155px] h-[48px] px-6 py-2 rounded-[16px]  text-white text-md font-medium hover:bg-[#02816E] transition">
+        </Link>
+        <Link
+          to="/archive"
+          className="w-[155px] h-[48px] px-6 py-2 rounded-[16px] text-white text-md font-medium hover:bg-[#02816E] transition flex items-center justify-center"
+        >
           آرشیو
-        </button>
+        </Link>
       </div>
     </aside>
   );

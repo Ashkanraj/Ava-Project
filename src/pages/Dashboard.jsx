@@ -18,7 +18,6 @@ const tabs = [
     content: (
       <div className="flex flex-col items-center ">
       <span className="w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4"></span>
-        <h3 className="text-xl font-bold mb-1"></h3>
         <p className="text-[#626262] w-[315px] text-center">برای بارگذاری فایل گفتاری (صوتی/تصویری)، دکمه را فشار دهید
         متن پیاده شده آن، در اینجا ظاهر می شود</p>
       </div>
@@ -48,7 +47,7 @@ const Dashboard = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="flex flex-col items-center w-[90%] mr-[10%]">
+    <section className="flex flex-col items-center mr-[166px]">
       <div className="relative w-full flex items-center justify-center">
         {/* Dropdown Button */}
         <div>
@@ -58,7 +57,7 @@ const Dashboard = () => {
         </div>
         {/* Title and Caption */}
         <div className=" flex flex-col gap-4 w-[450px]  mt-16 mb-8 items-center text-center">
-          <h2 className="text-2xl text-[#00B5A0] font-bold">تبدیل گفتار به متن</h2>
+          <h2 className="text-2xl text-[#00B5A0] ">تبدیل گفتار به متن</h2>
           <span className="text-gray-500 text-sm mt-1 text-[969696]">آوا با استفاده از هزاران ساعت گفتار با صدای افراد مختلف،
           زبان فارسی را یاد گرفته است و می‌تواند متن صحبت‌ها را بنویسد.</span>
         </div>
