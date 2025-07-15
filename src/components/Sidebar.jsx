@@ -7,7 +7,7 @@ const Sidebar = () => {
 
     >
       {/* Title at the top */}
-      <div className="h-20 flex items-center justify-center">
+      <div className="mt-[50px] mx-auto">
         <span className="text-white text-2xl font-bold">آوا</span>
       </div>
       {/* Sidebar items */}
