@@ -1,20 +1,12 @@
-<<<<<<< Updated upstream
-// ... existing code ...
-import Sidebar from './components/Sidebar';
-import './index.css';
-import Dashboard from './pages/Dashboard';
-
-function App() {
-  return (
-    <div>
-       <Sidebar/>
-       <Dashboard/>
-    </div>
-=======
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Main from "./pages/Main";
-import Archive from "./pages/Archive"; 
+import Archive from "./pages/Archive";
 
 function App() {
   return (
@@ -22,15 +14,14 @@ function App() {
       <div>
         <main>
           <Routes>
-           <Route path="/" element={<Navigate to="/text-to-speech" />} />
-           <Route path="/text-to-speech" element={<Main />} />
-           <Route path="/archive" element={<Archive />} />
+            <Route path="/" element={<Navigate to="/text-to-speech" />} />
+            <Route path="/text-to-speech" element={<Main />} />
+            <Route path="/archive" element={<Archive />} />
           </Routes>
         </main>
         <Sidebar />
       </div>
     </Router>
->>>>>>> Stashed changes
   );
 }
 

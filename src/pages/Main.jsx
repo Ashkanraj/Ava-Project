@@ -14,7 +14,7 @@ const tabs = [
     icon: <MicIcon/>,
     content: (
       <div className="flex flex-col items-center text-[#00B5A0] "> 
-        <span className="flex items-center justify-center w-16 h-16 rounded-[100%] bg-[#00B5A0] text-white mb-4 hover:bg-[#02816E] transition"><MicIcon/></span>
+        <span className="flex items-center justify-center cursor-pointer w-16 h-16 rounded-[100%] bg-[#00B5A0] text-white mb-4 hover:bg-[#02816E] transition"><MicIcon/></span>
         <p className="w-[275px] text-[#626262] text-center">برای شروع به صحبت، دکمه را فشار دهید
         متن پیاده شده آن، در اینجا ظاهر شود</p>
       </div>
@@ -26,7 +26,7 @@ const tabs = [
     icon: <UploadIcon/>,
     content: (
       <div className="flex flex-col items-center ">
-      <span className="flex items-center justify-center w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4 text-white hover:brightness-80 transition"><UploadIcon/></span>
+      <span className="flex items-center justify-center cursor-pointer w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4 text-white hover:brightness-80 transition"><UploadIcon/></span>
         <p className="text-[#626262] w-[315px] text-center">برای بارگذاری فایل گفتاری (صوتی/تصویری)، دکمه را فشار دهید
         متن پیاده شده آن، در اینجا ظاهر می شود</p>
       </div>
