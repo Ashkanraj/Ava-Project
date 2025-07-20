@@ -26,12 +26,16 @@ const tabs = [
     icon: <UploadIcon/>,
     content: (
       <div className="flex flex-col items-center ">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:src/pages/Dashboard.jsx
       <span className="w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4"></span>
         <h3 className="text-xl font-bold mb-1"></h3>
 =======
       <span className="flex items-center justify-center w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4 text-white hover:brightness-80 transition"><UploadIcon/></span>
 >>>>>>> Stashed changes:src/pages/Main.jsx
+=======
+      <span className="flex items-center justify-center w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4 text-white hover:brightness-80 transition"><UploadIcon/></span>
+>>>>>>> Stashed changes
         <p className="text-[#626262] w-[315px] text-center">برای بارگذاری فایل گفتاری (صوتی/تصویری)، دکمه را فشار دهید
         متن پیاده شده آن، در اینجا ظاهر می شود</p>
       </div>
