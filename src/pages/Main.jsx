@@ -4,53 +4,29 @@ import  UploadIcon  from "../assets/icons/upload_icon";
 import  LinkIcon  from "../assets/icons/chain_icon";
 import DropdownButton from "../components/GuestBtn";
 import LangBtn from "../components/LangBtn";
-
+import VoiceRecorder from "../components/VoiceRecorder";
+import UploadTab from "../components/UploadTab";
+import LinkTab from "../components/LinkTab";
  
 
 const tabs = [
   {
     label: "ضبط صدا",
     color: "#00B5A0",
-    icon: <MicIcon/>,
-    content: (
-      <div className="flex flex-col items-center text-[#00B5A0] "> 
-        <span className="flex items-center justify-center w-16 h-16 rounded-[100%] bg-[#00B5A0] text-white mb-4 hover:bg-[#02816E] transition"><MicIcon/></span>
-        <p className="w-[275px] text-[#626262] text-center">برای شروع به صحبت، دکمه را فشار دهید
-        متن پیاده شده آن، در اینجا ظاهر شود</p>
-      </div>
-    ),
+    icon: <MicIcon />,
+    content: <VoiceRecorder color={"#00B5A0"} />,
   },
   {
     label: "بارگذاری فایل",
     color: "#118AD3",
-    icon: <UploadIcon/>,
-    content: (
-      <div className="flex flex-col items-center ">
-      <span className="flex items-center justify-center w-16 h-16 rounded-[100%] bg-[#118AD3] mb-4 text-white hover:brightness-80 transition"><UploadIcon/></span>
-        <p className="text-[#626262] w-[315px] text-center">برای بارگذاری فایل گفتاری (صوتی/تصویری)، دکمه را فشار دهید
-        متن پیاده شده آن، در اینجا ظاهر می شود</p>
-      </div>
-    ),
+    icon: <UploadIcon />,
+    content: <UploadTab color={"#118AD3"} />,
   },
   {
     label: "لینک",
     color: "#FF1654",
-    icon: <LinkIcon/>,
-    content: (
-      <div className="flex flex-col items-center">
-        <div className="relative flex justify-center mb-6">
-            <input
-             type="text"
-             placeholder="example.com/sample.mp3"
-             className="w-[325px] h-12 text-left pl-12 pr-5 border border-[#FF1654] rounded-[50px] focus:outline-none focus:ring-2 focus:ring-[#FF1654] transition "
-             style={{ fontFamily: 'inherit' }}
-             />
-                   <span className="absolute left-[10px] top-[7px] flex items-center justify-center w-[35px] h-[35px] rounded-[100%] bg-[#FF1654] mb-4 text-white"><LinkIcon/></span>
-        </div>
-        <p className="text-[#626262] w-[350px] text-center">نشانی اینترنتی فایل حاوی گفتار (صوتی/تصویری) را وارد
-        و دکمه را فشار دهید</p>
-      </div>
-    ),
+    icon: <LinkIcon />,
+    content: <LinkTab color={"#FF1654"} />,
   },
 ];
 
@@ -92,13 +68,19 @@ const Main = () => {
             </button>
           ))}
         </div>
-        <div className="w-[550px] h-[370px] bg-white rounded-[25px] p-6  flex justify-center items-center"
-        style={tabs[activeTab].label === "ضبط صدا" ? {
-            borderTopRightRadius: "0", 
-            border: `2px solid ${tabs[activeTab].color}`} : {border: `2px solid ${tabs[activeTab].color}`}}
-        >
-          {tabs[activeTab].content}
-        </div>
+        <div
+  className="w-[550px] h-[370px] bg-white rounded-[25px] p-6 flex justify-center items-center"
+  style={
+    tabs[activeTab].label === "ضبط صدا"
+      ? {
+          borderTopRightRadius: "0",
+          border: `2px solid ${tabs[activeTab].color}`,
+        }
+      : { border: `2px solid ${tabs[activeTab].color}` }
+  }
+>
+  {tabs[activeTab].content}
+</div>
       </div>
       <div className="flex justify-end items-center gap-4 mt-4 w-[550px]">
         <p className="text-[#626262] text-sm">زبان گفتار:</p>

@@ -1,16 +1,4 @@
-<<<<<<< Updated upstream
-// ... existing code ...
-import Sidebar from './components/Sidebar';
-import './index.css';
-import Dashboard from './pages/Dashboard';
 
-function App() {
-  return (
-    <div>
-       <Sidebar/>
-       <Dashboard/>
-    </div>
-=======
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Main from "./pages/Main";
@@ -30,7 +18,7 @@ function App() {
         <Sidebar />
       </div>
     </Router>
->>>>>>> Stashed changes
+
   );
 }
 
